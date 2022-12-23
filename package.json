@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbdullahDalgic/stack-trace.git"
+    "url": "git+https://github.com/AbdullahDalgic/stack-trace-v8.git"
   },
   "files": [
     "index.js"
@@ -18,9 +18,9 @@
   "license": "MIT",
   "devDependencies": {},
   "bugs": {
-    "url": "https://github.com/AbdullahDalgic/stack-trace/issues"
+    "url": "https://github.com/AbdullahDalgic/stack-trace-v8/issues"
   },
-  "homepage": "https://github.com/AbdullahDalgic/stack-trace#readme",
+  "homepage": "https://github.com/AbdullahDalgic/stack-trace-v8#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }

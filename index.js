@@ -1,4 +1,4 @@
-module.exports = (arg) => {
+module.exports = () => {
   try {
     throw new Error();
   } catch (err) {
@@ -8,8 +8,6 @@ module.exports = (arg) => {
     const history = [];
 
     if (typeof match === "object" && match !== null && match.length > 0) {
-      console.log("Caller is:", match);
-
       match.forEach((item, index) => {
         if (index > 0) {
           const caller = item.split("at ")[1].split(" (")[0];
@@ -23,18 +21,17 @@ module.exports = (arg) => {
             ":" +
             calledLine[calledLine.length - 1];
           const file = calledLine.slice(0, calledLine.length - 2).join(":");
-          // const file =
+          const fileName = file.split("/").pop();
           history.push({
             caller,
             file,
+            fileName,
             line,
           });
         }
       });
-
-      console.log("Caller history:", history);
     }
   }
 
-  return newStr;
+  return history;
 };
