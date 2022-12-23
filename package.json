@@ -1,0 +1,25 @@
+{
+  "name": "stack-trace-v8",
+  "version": "1.0.0",
+  "description": "Get v8 stack traces as a detailed array of CallSite objects.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbdullahDalgic/stack-trace"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "stack",
+    "trace"
+  ],
+  "author": {
+    "name": "Abdullah Dalgıç",
+    "url": "http://www.abdullahdalgic.com.tr",
+    "email": "abdullahdalgic33@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
