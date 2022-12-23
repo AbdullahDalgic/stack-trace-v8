@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AbdullahDalgic/stack-trace"
+    "url": "git+https://github.com/AbdullahDalgic/stack-trace.git"
   },
   "files": [
     "index.js"
@@ -14,12 +14,14 @@
     "stack",
     "trace"
   ],
-  "author": {
-    "name": "Abdullah Dalgıç",
-    "url": "http://www.abdullahdalgic.com.tr",
-    "email": "abdullahdalgic33@gmail.com"
-  },
+  "author": "Abdullah Dalgıç <abdullahdalgic33@gmail.com> (http://www.abdullahdalgic.com.tr)",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/AbdullahDalgic/stack-trace/issues"
+  },
+  "homepage": "https://github.com/AbdullahDalgic/stack-trace#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
