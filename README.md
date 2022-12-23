@@ -11,8 +11,9 @@
 ## Usage
 
 ```
-const stackTrace = require('stack-trace');
-console.table(stackTrace);
+import StackTrace, { LastTrace } from "stack-trace-v8";
+console.log("StackTrace", StackTrace);
+console.log("LastTrace", LastTrace);
 
 ```
 

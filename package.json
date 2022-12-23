@@ -2,13 +2,14 @@
   "name": "stack-trace-v8",
   "version": "1.0.1",
   "description": "Get v8 stack traces as a detailed array of CallSite objects.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AbdullahDalgic/stack-trace-v8.git"
   },
   "files": [
-    "index.js"
+    "lib/**/*"
   ],
   "keywords": [
     "stack",
@@ -16,12 +17,25 @@
   ],
   "author": "Abdullah Dalgıç <abdullahdalgic33@gmail.com> (http://www.abdullahdalgic.com.tr)",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.9.4"
+  },
   "bugs": {
     "url": "https://github.com/AbdullahDalgic/stack-trace-v8/issues"
   },
   "homepage": "https://github.com/AbdullahDalgic/stack-trace-v8#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" ",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   }
 }
