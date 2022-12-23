@@ -8,11 +8,12 @@ interface ITrace {
   caller?: string;
   file?: string;
   line?: string;
+  fileName?: string;
 }
 
 let allTraces: ITrace[] = [];
 
-const traces = function () {
+const traces = () => {
   allTraces = [];
 
   try {
@@ -36,10 +37,11 @@ const traces = function () {
             ":" +
             calledLine[calledLine.length - 1];
           const file = calledLine.slice(0, calledLine.length - 2).join(":");
-          // const file =
+          const fileName = file.split("/").pop();
           allTraces.push({
             caller,
             file,
+            fileName,
             line,
           });
         }
@@ -50,10 +52,13 @@ const traces = function () {
   return allTraces;
 };
 
-export default function StackTrace() {
+const StackTrace = () => {
   return traces();
-}
+};
 
-export function LastTrace() {
+const LastTrace = () => {
   return traces()[allTraces.length - 1];
-}
+};
+
+export default StackTrace;
+export { LastTrace };
