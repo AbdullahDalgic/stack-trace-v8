@@ -1,6 +1,6 @@
 {
   "name": "stack-trace-v8",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get v8 stack traces as a detailed array of CallSite objects.",
   "main": "index.js",
   "repository": {
