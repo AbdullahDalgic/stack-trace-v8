@@ -1,18 +1,4 @@
-# stack-trace-v8
-
-> Get v8 stack traces as a detailed array of CallSite objects. Determine through which functions your code is called. either find the entire history of the code or detect the first or last function.
-
-## Install
-
-```
-    npm install stack-trace-v8
-    yarn add stack-trace-v8
-```
-
-## Usage
-
-```
-import StackTrace, { LastTrace, FirstTrace } from "stack-trace-v8";
+import StackTrace, { LastTrace, FirstTrace } from "../src";
 
 const FirstFunction = () => {
   SecondFunction();
@@ -41,7 +27,6 @@ const SecondFunction = () => {
 //     line: "1:1"
 //   }
 // ]
-
 // Output LastTrace:
 // {
 //   caller: "SecondFunction",
@@ -49,7 +34,6 @@ const SecondFunction = () => {
 //   fileName: "index.ts",
 //   line: "1:1"
 // }
-
 // Output FirstTrace:
 // {
 //   caller: "FirstFunction",
@@ -57,9 +41,3 @@ const SecondFunction = () => {
 //   fileName: "index.ts",
 //   line: "1:1"
 // }
-
-```
-
-## License
-
-MIT (c) Abdullah Dalgıç
