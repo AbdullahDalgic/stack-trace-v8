@@ -13,7 +13,15 @@
   ],
   "keywords": [
     "stack",
-    "trace"
+    "trace",
+    "v8",
+    "stacktrace",
+    "stack-trace",
+    "stacktracejs",
+    "stack-trace-js",
+    "stack-trace-v8",
+    "detailed",
+    "call-site"
   ],
   "author": "Abdullah Dalgıç <abdullahdalgic33@gmail.com> (http://www.abdullahdalgic.com.tr)",
   "license": "MIT",
