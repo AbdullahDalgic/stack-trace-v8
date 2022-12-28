@@ -31,13 +31,13 @@ const SecondFunction = () => {
 //   {
 //     caller: "FirstFunction",
 //     file: "http://localhost/index.js",
-//     fileName: "index.ts",
+//     fileName: "index.js",
 //     line: "1:1"
 //   },
 //   {
 //     caller: "SecondFunction",
 //     file: "http://localhost/index.js",
-//     fileName: "index.ts",
+//     fileName: "index.js",
 //     line: "1:1"
 //   }
 // ]
@@ -46,7 +46,7 @@ const SecondFunction = () => {
 // {
 //   caller: "SecondFunction",
 //   file: "http://localhost/index.js",
-//   fileName: "index.ts",
+//   fileName: "index.js",
 //   line: "1:1"
 // }
 
@@ -54,7 +54,7 @@ const SecondFunction = () => {
 // {
 //   caller: "FirstFunction",
 //   file: "http://localhost/index.js",
-//   fileName: "index.ts",
+//   fileName: "index.js",
 //   line: "1:1"
 // }
 
