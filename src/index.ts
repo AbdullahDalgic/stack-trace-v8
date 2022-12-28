@@ -57,8 +57,30 @@ const StackTrace = () => {
 };
 
 const LastTrace = () => {
-  return traces()[allTraces.length - 1];
+  traces();
+  const lastTrace = allTraces.length
+    ? allTraces[allTraces.length - 1]
+    : {
+        caller: "",
+        file: "",
+        fileName: "",
+        line: "",
+      };
+
+  return lastTrace;
+};
+
+const FirstTrace = () => {
+  traces();
+  const firstTrace = allTraces[0] ?? {
+    caller: "",
+    file: "",
+    fileName: "",
+    line: "",
+  };
+
+  return firstTrace;
 };
 
 export default StackTrace;
-export { LastTrace };
+export { LastTrace, FirstTrace };
